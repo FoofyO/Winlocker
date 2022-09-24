@@ -19,6 +19,6 @@ You have to open App.xaml.cs and there can change "Password" property
 ```
 public partial class App : Application
 {
-  public const string Password = "enter_your_password";
+    public const string Password = "enter_your_password";
 }
 ```

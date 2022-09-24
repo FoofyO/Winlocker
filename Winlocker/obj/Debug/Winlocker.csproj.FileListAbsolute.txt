@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\bin\Debug\Winlocker.exe.config
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\bin\Debug\Winlocker.exe
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\bin\Debug\Winlocker.pdb
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\MainWindow.g.cs
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\App.g.cs
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker_MarkupCompile.cache
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker_MarkupCompile.lref
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\MainWindow.baml
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker.g.resources
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker.exe
+C:\Users\user\Documents\GitHub\Winlocker\Winlocker\obj\Debug\Winlocker.pdb

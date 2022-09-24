@@ -41,7 +41,7 @@
 
             <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
                 <TextBox MaxLength="30" HorizontalAlignment="Center" Name="PasswordBox" Style="{StaticResource MyPasswordBox}"/>
-                <Button Name="button_unlock" Content="Unlock" Click="Unlock" Style="{StaticResource MyButtonUnlock}"/>
+                <Button Name="button_unlock" Content="Unlock" Click="OnUnlock" Style="{StaticResource MyButtonUnlock}"/>
             </StackPanel>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" Height="60" HorizontalAlignment="Left">

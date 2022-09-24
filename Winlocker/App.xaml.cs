@@ -10,5 +10,6 @@ namespace Winlocker
 {
     public partial class App : Application
     {
+        public const string Password = "qwerty123";
     }
 }
